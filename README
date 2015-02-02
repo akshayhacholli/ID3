@@ -1,0 +1,38 @@
+Details about the project
+|--------------------------------------------------------------------------------------------------------------|
+| # The following program is written in JAVA.                                                                  |
+| # The program builds a Decision Tree using ID3 algorithm.                                                    |
+| # It takes two inputs as command line arguments.                                                             |
+| 	- First one is the "Training" file using which tree will be built.                                         |
+| 	- Second one is the "Testing" used to test the accuracy of decision tree.                                  |
+| # The entire program uses four java files namely - Attribute.java, ID3.java, TreeData.java, TrainData.java.  |
+| # The main program resides in the file ID3.java and that's the starting point of program.                    |
+|--------------------------------------------------------------------------------------------------------------|
+
+ *  Operating system : Tested on windows and ubuntu machine
+ *  Assumption : Java path is set
+ *
+ *  Compilation : javac -d . directory_path\ID3\*.java
+ *  Execution: java ID3/ID3 "path_of_train_file" "path_of_test_file"
+ *  
+ *  Input : file path of train and test data as command line arguments
+ *  Output : Decision tree identified using train data and accuracy of decision tree for train and test data
+ *  
+ *  Example for windows - 
+ *  C:\> java ID3/ID3 "D:\Machine Learning\Homework\HW1\Data\train.dat" "D:\Machine Learning\Homework\HW1\Data\test.dat"
+ *  attr1 = 0 : 
+ *  | | attr2 = 0 : 
+ *  | | | attr3 = 0 : 0
+ *  | | | attr3 = 1 : 1
+ *  | | attr2 = 1 : 
+ *  | | | attr3 = 0 : 1
+ *  | | | attr3 = 1 : 0
+ *  | attr1 = 1 : 
+ *  | | attr2 = 0 : 
+ *  | | | attr3 = 0 : 0
+ *  | | | attr3 = 1 : 0
+ *  | | attr2 = 1 : 
+ *  | | | attr3 = 0 : 0
+ *  | | | attr3 = 1 : 0
+ *  Accuracy of trained data ( 800 instances ) = 89.38
+ *  Accuracy of test data ( 203 instances ) = 87.19
